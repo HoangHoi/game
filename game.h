@@ -23,6 +23,7 @@
 #define WIFI_SSID "Tang-4"
 #define WIFI_PASS "!@#$%^&*o9"
 #define WIFI_TIMES_TRY 20
+#define WIFI_CONNECT_DELAY 500
 
 #define WIFI_CONNECT_OK 1
 #define WIFI_CONNECT_TIMEOUT 0

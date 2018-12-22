@@ -29,13 +29,14 @@ int connectWifi(const char* ssid, const char* pass)
     Serial.println("Waiting for Wifi to connect");
     while (c < WIFI_TIMES_TRY) {
         if (WiFi.status() == WL_CONNECTED) {
+            Serial.println("");
             Serial.println("Wifi connected!");
             Serial.print("Local IP: ");
             Serial.println(WiFi.localIP());
 
             return WIFI_CONNECT_OK;
         }
-        delay(500);
+        delay(WIFI_CONNECT_DELAY);
         Serial.print(".");
         c++;
     }
